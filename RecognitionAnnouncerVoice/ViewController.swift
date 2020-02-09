@@ -40,6 +40,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
                 }
             }
         }
+        
+        doRecognize(url: URL(fileURLWithPath: path!))
     }
 
     
