@@ -11,7 +11,7 @@ import Speech
 
 class ViewController: UIViewController,SFSpeechRecognizerDelegate {
     
-    // MARK: 温泉関連Properties
+    // MARK: 音声関連Properties
     //localeのidentifierに言語を指定、。日本語はja-JP,英語はen-US
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))
     private var recognitionTask: SFSpeechRecognitionTask?
