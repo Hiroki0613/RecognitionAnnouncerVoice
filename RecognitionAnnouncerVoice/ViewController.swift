@@ -14,7 +14,6 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
     // MARK: 温泉関連Properties
     //localeのidentifierに言語を指定、。日本語はja-JP,英語はen-US
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))
-    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
 
     
@@ -44,7 +43,35 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
     }
 
     
+    //音声ファイルのパスの取得
+    let path = Bundle.main.path(forResource: "nhk", ofType: "mp3")
+
     
+    //音声の解析を実行
+    func doRecognize(url:URL){
+        let recognitionRequest = SFSpeechURLRecognitionRequest(url: url)
+        //時間計測用
+        let start = Date()
+        
+        recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
+            if let result = result {
+                print("所要時間", Date().timeIntervalSince(start))
+                //解析結果の文字列表示
+                print(result.bestTranscription.formattedString)
+            }
+            
+            if let error = error {
+                print(error)
+            }
+        })
+    }
+
 
 }
+
+/*
+ 参考URL
+ 【iOS】Speechフレームワークでアナウンサーの声を認識させてみた
+ https://www.konosumi.net/entry/2017/10/22/173153
+ */
 
