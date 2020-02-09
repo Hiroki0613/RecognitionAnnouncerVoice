@@ -13,6 +13,7 @@
 		7F30F07C23EFE2BC00ACADB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F07A23EFE2BC00ACADB6 /* Main.storyboard */; };
 		7F30F07E23EFE2BC00ACADB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F07D23EFE2BC00ACADB6 /* Assets.xcassets */; };
 		7F30F08123EFE2BC00ACADB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F07F23EFE2BC00ACADB6 /* LaunchScreen.storyboard */; };
+		7F30F08923EFE5C500ACADB6 /* nhk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F30F08823EFE5C500ACADB6 /* nhk.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7F30F07D23EFE2BC00ACADB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F30F08023EFE2BC00ACADB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F30F08223EFE2BC00ACADB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F30F08823EFE5C500ACADB6 /* nhk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nhk.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				7F30F07623EFE2BC00ACADB6 /* SceneDelegate.swift */,
 				7F30F07823EFE2BC00ACADB6 /* ViewController.swift */,
 				7F30F07A23EFE2BC00ACADB6 /* Main.storyboard */,
+				7F30F08823EFE5C500ACADB6 /* nhk.mp3 */,
 				7F30F07D23EFE2BC00ACADB6 /* Assets.xcassets */,
 				7F30F07F23EFE2BC00ACADB6 /* LaunchScreen.storyboard */,
 				7F30F08223EFE2BC00ACADB6 /* Info.plist */,
@@ -127,6 +130,7 @@
 			files = (
 				7F30F08123EFE2BC00ACADB6 /* LaunchScreen.storyboard in Resources */,
 				7F30F07E23EFE2BC00ACADB6 /* Assets.xcassets in Resources */,
+				7F30F08923EFE5C500ACADB6 /* nhk.mp3 in Resources */,
 				7F30F07C23EFE2BC00ACADB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
